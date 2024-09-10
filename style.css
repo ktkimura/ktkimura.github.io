@@ -1,0 +1,35 @@
+:root {
+    --lightPurple: #F0E6EF;
+    --purple: #9C89B8;
+    --lavender: #B8BEDD;
+    --lilac: #EFC3E6;  
+    
+    --lightTan: #F2E9E4;
+    --tan: #C9ADA7;
+    --purpleGray: #9A8C98;
+    --navy: #4A4E69;
+    --darkNavy: #22223B;
+}
+
+body {
+    background-color: var(--lightTan);
+    margin: 6rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+.socials {
+    background-color: var(--purpleGray);
+    color: var(--darkNavy);
+    margin: 0.5rem;
+    padding: 0.5em;
+}
+
+.socials:hover{
+    background-color: var(--navy);
+    color: var(--lightTan);
+}
