@@ -1,17 +1,62 @@
+/*******************************************************************************
+ * This file was adapted from a blog post by Ibas Majeed on https://ibaslogic.com/
+ * Date: December 31, 2024
+ * URL: https://ibaslogic.com/how-create-multilevel-dropdown-menu-react/
+*******************************************************************************/
 import Dropdown from './Dropdown';
+import { useState, useEffect, useRef } from 'react';
 
-const MenuItems = ({items}) => {
+const MenuItems = ({items, depthLevel}) => {
+    const [dropdown, setDropdown] = useState(false);
+    let ref = useRef();
+
+    useEffect(() => {
+        const handler = (event) => {
+        if (dropdown && ref.current && !ref.current.contains(event.target)) {
+          setDropdown(false);
+        }
+        };
+        document.addEventListener("mousedown", handler);
+        document.addEventListener("touchstart", handler);
+        return () => {
+        // Cleanup the event listener
+        document.removeEventListener("mousedown", handler);
+        document.removeEventListener("touchstart", handler);
+        };
+      }, [dropdown]);
+
+
+    const onMouseEnter = () => { 
+        window.innerWidth > 960 && setDropdown(true);
+    };
+    const onMouseLeave = () => {
+        window.innerWidth > 960 && setDropdown(false);
+    };
+      
     return (
-        <li className="menu-items">
-            {items.submenu? (
+        <li 
+            className="menu-items" 
+            ref={ref}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}       
+        >
+            {items.submenu ? (
                 <>
-                    <button type="button" aria-haspopup="menu">
-                        {items.title}{' '}
+                    <button 
+                        type="button" 
+                        aria-haspopup="menu"
+                        aria-expanded={dropdown ? "true" : "false"}
+                        onClick={() => setDropdown((prev) => !prev)}                        
+                    >
+                    {items.title}{' '}
                     </button>
-                    <Dropdown submenus={items.submenu} />
+                    <Dropdown 
+                        submenus={items.submenu}
+                        dropdown={dropdown} 
+                    />
                 </>
             ) : (
-                <a href={items.url}>{items.title}</a>
+                <Link to={items.url}>{items.title}</Link>
             )}
         </li>
     );

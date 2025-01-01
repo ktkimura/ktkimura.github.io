@@ -1,11 +1,10 @@
-import { menuItems } from '../menuItems';
-import MenuItems from './MenuItems';
-
 /*******************************************************************************
  * This file was adapted from a blog post by Ibas Majeed on https://ibaslogic.com/
  * Date: December 31, 2024
  * URL: https://ibaslogic.com/how-create-multilevel-dropdown-menu-react/
 *******************************************************************************/
+import { menuItems } from '../menuItems';
+import MenuItems from './MenuItems';
 
 const Navbar = () => {
     return (
