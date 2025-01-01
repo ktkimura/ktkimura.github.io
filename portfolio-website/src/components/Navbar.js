@@ -1,3 +1,6 @@
+import { menuItems } from '../menuItems';
+import MenuItems from './MenuItems';
+
 /*******************************************************************************
  * This file was adapted from a blog post by Ibas Majeed on https://ibaslogic.com/
  * Date: December 31, 2024
@@ -7,8 +10,12 @@
 const Navbar = () => {
     return (
         <nav>
-            <ul className="menus">Nav Items here</ul>
-        </nav>s
+            <ul className="menus">
+                {menuItems.map((menu, index) => {
+                    return <MenuItems items={menu} key={index} />;
+                })}
+            </ul>
+        </nav>
     );
 };
 

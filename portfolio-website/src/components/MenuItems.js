@@ -1,20 +1,20 @@
-/*******************************************************************************
- * This file was adapted from a blog post by Ibas Majeed on https://ibaslogic.com/
- * Date: December 31, 2024
- * URL: https://ibaslogic.com/how-create-multilevel-dropdown-menu-react/
-*******************************************************************************/
+import Dropdown from './Dropdown';
 
-export const menuItems = [
-    {
-        title: 'Home',
-        url: '/',
-    },
-    {
-        title: 'About Me',
-        url: '/about',
-    },
-    {
-        title: 'Projects',
-        url: '/projects',
-    },
-];
+const MenuItems = ({items}) => {
+    return (
+        <li className="menu-items">
+            {items.submenu? (
+                <>
+                    <button type="button" aria-haspopup="menu">
+                        {items.title}{' '}
+                    </button>
+                    <Dropdown submenus={items.submenu} />
+                </>
+            ) : (
+                <a href={items.url}>{items.title}</a>
+            )}
+        </li>
+    );
+};
+
+export default MenuItems;
