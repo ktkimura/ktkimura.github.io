@@ -23,7 +23,7 @@ export const menuItems = [
             },
             {
                 title: `Let's Get Cooking!`,
-                url: 'lets-get-cooking',
+                url: 'letsGetCooking',
             },
             {
                 title: 'MyMail',
