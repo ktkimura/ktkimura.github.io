@@ -17,8 +17,8 @@ function App() {
       <BrowserRouter>
         <header>
           <h1>Katie Kimura's Portfolio</h1>
+          <Header />
         </header>
-        <Header />
         <main>
           <section>
             <Routes>
@@ -32,6 +32,12 @@ function App() {
           </section>
         </main>
         <footer>
+          <table className="footerTable">
+            <tr>
+              <td className="footerTableCell"><a href="mailto:katiekimura2022@gmail.com" title="Email me">Contact</a></td>
+              <td className="footerTableCell"><a href="/Katie-Kimura-Resume.pdf" target="_blank" download title="Download resume">Resume</a></td>
+            </tr>
+          </table>
           <p>&copy; 2024 Katie Kimura.</p>
         </footer>
       </BrowserRouter>
