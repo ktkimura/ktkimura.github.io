@@ -1,21 +1,49 @@
+:root {
+  --darkestPurple: rgb(105,102,138);
+  --darkPurple: rgb(136,124,157);
+  --darkMedPurple: rgb(160,147,181);
+  --medPurple: rgb(184,171,206);
+  --medLightPurple: rgb(212,203,228);
+  --lightPurple: rgb(226,220,239);
+}
+
 * {
   box-sizing: border-box;
 }
 
-.content-area {
-  padding: 1.5em 2.5em;
-  background-color: antiquewhite;
-  font-family: 'Montserrat', sans-serif;
-  max-width: 1000px;
-  margin: 0em auto;
+body {
+  background-color: var(--lightPurple);
 }
 
-body {
-  margin: 0.5em;
-  font-family: 'Montserrat', sans-serif;
+.content-area {
+  padding: 1.5em 2.5em;
+  max-width: 1000px;
+  margin: 0em auto;
+
+  /* Adapted from https://css.glass */
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 1em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+  border: solid rgba(255, 255, 255, 0.8) 0.15em;
+}
+
+.content-area * {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.content-area h1,
+.content-area h2,
+.content-areah h3 {
+  font-family: "Merriweather", serif;
+}
+
+h4 {
+  margin-bottom: -0.25em;
 }
 
 nav {
+  font-family: "Merriweather", serif;
+  font-size: larger;
   max-width: 1000px;
   margin: 0em auto;
   display: flex;
@@ -23,35 +51,65 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
-  padding-bottom: 0.5em;
-  border-bottom-style: solid;
-  border-color: antiquewhite;
+}
+
+.nav-home {
+  text-decoration: none;
+  color: black;
 }
 
 .nav-item {
   padding-left: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item:hover,
+.nav-home:hover {
+  color: var(--darkestPurple);
 }
 
 footer {
+  font-family: "Merriweather", serif;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   margin-top: 2.5em;
 }
 
-.footer-link{
+.footer-div {
+  margin-bottom: 1em;
+}
+
+.footer-link {
   margin: 0 0.5em 0 0.5em;
-  background-color: antiquewhite;
   padding: 0.5em;
-  border-style: solid;
-  border-color: black;
-}
-
-a:hover, a:visited, a:link, a:active {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 0.625em;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+  border: solid rgba(255, 255, 255, 0.8) 0.15em;
 }
 
+.footer-link:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.button {
+  display: inline-block;
+  margin: 0.1em 0em;
+  padding: 0.5em;
+  background-color: var(--medLightPurple);
+  border: solid var(--darkMedPurple) 0.15em;
+  border-radius: 0.625em;
+  color: black;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--darkMedPurple);
+}
 
 /* TIMELINE CSS */
 
@@ -63,10 +121,10 @@ a:hover, a:visited, a:link, a:active {
 
 /* actual timeline (vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0.5em;
-  background-color: black;
+  background-color: var(--darkMedPurple);
   top: 0;
   bottom: 0;
   left: 2.5em;
@@ -82,12 +140,12 @@ a:hover, a:visited, a:link, a:active {
 
 /* circles on vertical ruler */
 .timelineContainer::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1.5em;
   height: 1.5em;
   background-color: white;
-  border: 0.25em solid black;
+  border: 0.25em solid var(--darkMedPurple);
   top: 1em;
   border-radius: 50%;
   z-index: 1;
@@ -111,7 +169,6 @@ a:hover, a:visited, a:link, a:active {
   border-width: 1em 1em 1em 0;
   border-color: transparent white transparent transparent;
 }
-
 
 .right::after {
   left: -1em;
@@ -159,4 +216,3 @@ a:hover, a:visited, a:link, a:active {
 .App-link {
   color: #61dafb;
 }
-
