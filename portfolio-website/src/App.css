@@ -1,48 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
 .content-area {
-  margin: 0px auto;
-  max-width: 900px;
+  padding: 1.5em 2.5em;
+  background-color: antiquewhite;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1000px;
+  margin: 0em auto;
 }
 
 body {
   margin: 0.5em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav {
+  max-width: 1000px;
+  margin: 0em auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
-  margin: 0em auto;
-  max-width: 900px;
-}
-
-.nav-left {
-  margin-left: 0.5em;
-}
-
-.nav-right {
-  margin-right: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom-style: solid;
+  border-color: antiquewhite;
 }
 
 .nav-item {
-  padding-left: 0.5em;
+  padding-left: 1em;
 }
 
 footer {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  margin-top: 2.5em;
 }
 
 .footer-link{
   margin: 0 0.5em 0 0.5em;
+  background-color: antiquewhite;
+  padding: 0.5em;
+  border-style: solid;
+  border-color: black;
 }
 
 a:hover, a:visited, a:link, a:active {
   text-decoration: none;
+  color: black;
 }
 
+
+/* TIMELINE CSS */
+
+/* actual timeline (vertical ruler) */
+.timeline {
+  position: relative;
+  margin: 0em auto;
+}
+
+/* actual timeline (vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 0.5em;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 2.5em;
+}
+
+/* container around content */
+.timelineContainer {
+  padding: 0.5em 2em;
+  position: relative;
+  background-color: inherit;
+  width: 90%;
+}
+
+/* circles on vertical ruler */
+.timelineContainer::after {
+  content: '';
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+  border: 0.25em solid black;
+  top: 1em;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* ensure container is placed to the right */
+.right {
+  left: 2.75em;
+}
+
+/* add arrows to container (pointing left)*/
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1em;
+  width: 0;
+  z-index: 1;
+  left: 1.25em;
+  border: medium solid white;
+  border-width: 1em 1em 1em 0;
+  border-color: transparent white transparent transparent;
+}
+
+
+.right::after {
+  left: -1em;
+}
+
+.timelineContent {
+  padding: 0.5em 2em 2em 2em;
+  background-color: white;
+  position: relative;
+  border-radius: 0.75em;
+}
+
+.timelineImage {
+  max-width: 100%;
+  border: solid black 0.1em;
+}
 /*********************************************************************/
 
 .App {
@@ -60,7 +145,7 @@ a:hover, a:visited, a:link, a:active {
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -69,7 +154,7 @@ a:hover, a:visited, a:link, a:active {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;

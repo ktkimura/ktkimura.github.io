@@ -4,6 +4,7 @@ import NavBar from './components/Navbar';
 
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import ResearchPage from './pages/ResearchPage';
 import ProjectsPage from './pages/ProjectsPage';
 import BeaverHubPage from './pages/projects/BeaverHubPage';
 import MyMailPage from './pages/projects/MyMailPage';
@@ -24,10 +25,11 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/about" element={<AboutPage />}></Route>
+                <Route path="research" element={<ResearchPage />}></Route>
                 <Route path="/projects" element={<ProjectsPage />}></Route>
-                <Route path="beaverhub" element={<BeaverHubPage />}></Route>
-                <Route path="letsGetCooking" element={<LetsGetCookingPage />}></Route>
-                <Route path="myMail" element={<MyMailPage />}></Route>
+                <Route path="/projects/beaverhub" element={<BeaverHubPage />}></Route>
+                <Route path="/projects/letsGetCooking" element={<LetsGetCookingPage />}></Route>
+                <Route path="/projects/myMail" element={<MyMailPage />}></Route>
               </Routes>
             </div>
           </body>
