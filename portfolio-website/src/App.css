@@ -29,6 +29,7 @@ body {
 
 .content-area * {
   font-family: "Merriweather Sans", sans-serif;
+  line-height: 1.5;
 }
 
 .content-area h1,
