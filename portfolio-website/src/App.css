@@ -93,6 +93,20 @@ footer {
   background-color: var(--darkMedPurple);
 }
 
+.projectTags {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tag {
+  margin: -0.25em 1em 1em 0em; 
+  padding: 0.5em 1em;
+  background-color: var(--darkestPurple);
+  border: solid var(--darkestPurple) 0.15em;
+  color: white;
+  border-radius: 4em;
+}
+
 /* TIMELINE CSS */
 
 /* actual timeline (vertical ruler) */
