@@ -5,61 +5,196 @@ const BeaverHubPage = () => {
     <>
       <section>
         <h1>Beaverhub Redesign</h1>
+        <p>
+          PSY 446 Term Project &nbsp;&nbsp;●&nbsp;&nbsp; October - December 2024
+        </p>
       </section>
       <section>
-        <div className="projectTags">
-          <p className="tag">Figma</p>
-          <p className="tag">Usability Testing</p>
+        <div className="projectImages">
+          <img
+            src={require("../../images/beaverhub/bh-old-home.png")}
+            alt="Current Beaverhub Home Page UI"
+            className="overviewImage"
+          ></img>
+          <img
+            src={require("../../images/beaverhub/bh-new-home.png")}
+            alt="Redesigned Beaverhub Home Page UI"
+            className="overviewImage"
+          ></img>
         </div>
       </section>
       <section>
         <h2>Project Overview</h2>
-        <p>
-          Beaverhub is a website created by Oregon State University (OSU) that
-          acts as a “one-stop hub for tools and resources that support
-          [students’] OSU experience” (https://uit.oregonstate.edu/beaver-hub).
-          Functionalities listed by OSU themselves are as follows:
-        </p>
-        <ul>
-          <li>Connect with advisors and other members of Success Team</li>
-          <li>Access information on class schedule and assignments</li>
-          <li>
-            Track tasks to complete and access other personalized content that
-            supports one’s educational journey
-          </li>
-          <li>Quickly find offices and resources</li>
-          <li>Locate resources and mark them as favorites</li>
-        </ul>
-        <p>
-          While Beaverhub <em>does</em> succeed in offering these
-          functionalities, the interface it hosts these services on are in need
-          of improvement as many OSU students hold negative sentiment towards
-          using the resource and/or only use it out of necessity. Thus, this
-          redesign project aimed to make Beaverhub's interface more
-          user-friendly and customizable, with an overall goal of creating a
-          more positive experience for users.
-        </p>
+        <div>
+          <div>
+            <h3>Challenge</h3>
+            <p>
+              Something that most Oregon State University (OSU) students can
+              agree on is the unintuitive and inefficient interface of
+              Beaverhub, a university-developed application meant to be a
+              centralized platform for students to manage their academic,
+              financial, and scheduling needs. To mitigate these issues, I
+              collaborated with fellow OSU students to redesign Beaverhub’s
+              interface to better facilitate a positive user experience.{" "}
+            </p>
+          </div>
+        </div>
+        <div className="threeColumnDiv">
+          <div className="columnDiv">
+            <h3>Team</h3>
+            <ul>
+              <li>Katie Kimura</li>
+              <li>Daniel Thien</li>
+              <li>Ellie Herber</li>
+              <li>Sydney Stupp</li>
+            </ul>
+          </div>
+          <div className="columnDiv">
+            <h3>Goals</h3>
+            <ul>
+              <li>Improve the home page's practicality</li>
+              <li>Reimagine how information is displayed</li>
+              <li>Reduce the number of page redirections</li>
+            </ul>
+          </div>
+          <div className="columnDiv">
+            <h3>Impact</h3>
+            <ul>
+              <li>
+                Improved customization of interface by{" "}
+                <mark class="stat">105%</mark>
+              </li>
+              <li>
+                Reduced time to find key student information (GPA, bills,
+                schedule) by <mark class="stat">61%</mark>
+              </li>
+              <li>
+                Reduced cognitive load by <mark class="stat">87.5%</mark> when
+                reading schedule information
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
+      <hr></hr>
       <section>
-        <h2>Timeline</h2>
-
-        <a
-          href="https://www.figma.com/proto/hpbqhz40CtQvBMhNVitGah/PSY446-Lab-5?node-id=116-918&starting-point-node-id=116%3A918&t=nybA54bNK6TqvT9L-1"
-          className="button"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Prototype Available Here
-        </a>
+        <h2>The Process</h2>
+        <div>
+          <h3>Research</h3>
+          <p>
+            The first step we took towards redesigning Beaverhub was evaluating
+            its current interface and user experience by developing user
+            personas and conducting an observational study.{" "}
+          </p>
+          <h4>User Personas</h4>
+          <div>
+            <div className="userPersona">
+              <img
+                src={require("../../images/beaverhub/susan.png")}
+                alt="Icon of a woman"
+                className="personaImage"
+              ></img>
+              <div>
+                <p>Susan</p>
+                <ul>
+                  <li>35 years old</li>
+                  <li>Part-time Student</li>
+                  <li>Pre-med Major</li>
+                  <li>Ecampus Student</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p>
+            When evaluating Beaverhub through these users’ lenses, we were able
+            to pinpoint areas we could possibly improve upon:
+          </p>
+          <h4>Observational Study</h4>
+          <p>
+            I conducted an observational study an OSU student to better
+            understand how they interacted with the Beaverhub interface. Results
+            of the study were in line with to our takeaways from the user
+            stories evaluation, with the participant...
+          </p>
+          <ul>
+            <li>reporting they rarely use Beaverhub </li>
+            <li>
+              quickly navigating away from pages with irrelevant information
+              (e.g., Tasks page)
+            </li>
+            <li>
+              expressing desire for more relevant information on the home page
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Development</h3>
+          <div>
+            <h4>Scope & Focus Features</h4>
+          </div>
+          <div>
+            <h4>Requirements</h4>
+            <p>
+              With a more comprehensive understanding of how to improve
+              Beaverhub’s interface, we completed a requirements analysis for
+              what changes we wanted to make. This process consisted of three
+              steps:
+            </p>
+            <ol>
+              <li>
+                Define requirements for both functional and user experience
+              </li>
+              <li>
+                Categorize requirements as physical, psychological (cognitive,
+                perceptual, emotional, etc.), or technological
+              </li>
+              <li>Rank requirements in order of overall importance</li>
+            </ol>
+            <p>
+              In the end, we had created 18 requirements. Eight of them were
+              functional and the remaining 10 were for user experience. We
+              ensured we were ready to start developing our prototype, by
+              conducting a heuristic analysis of our 18 requirements using&nbsp;
+              <a
+                href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Nielsen’s 10 Usability Heuristics
+              </a>
+              &nbsp;and documenting how we planned each heuristic to be
+              fulfilled.
+            </p>
+          </div>
+          <div>
+            <h4>Prototype</h4>
+            <iframe
+              title="Figma Prototype Embed"
+              style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+              width="100%"
+              height="600em"
+              src="https://embed.figma.com/proto/hpbqhz40CtQvBMhNVitGah/PSY446-Lab-5?node-id=116-918&starting-point-node-id=116%3A918&embed-host=share"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+        <div>
+          <h3>Evaluation</h3>
+          <h4>Usability Studies</h4>
+          <h4>Study Results & Findings</h4>
+        </div>
       </section>
+      <hr></hr>
       <section>
-        <h2>Insights</h2>
+        <h3>Final Thoughts</h3>
         <p>
-          Sit sunt minim consectetur aliqua Lorem aliqua et occaecat nulla
-          labore amet culpa exercitation. Adipisicing occaecat exercitation elit
-          duis est cillum ipsum tempor ut deserunt labore. Eiusmod fugiat
-          pariatur magna proident qui in aliqua. Elit ullamco laborum esse eu
-          irure sunt quis.
+          If this project were to have continued, we would have aimed to present
+          a more refined and functional product to OSU’s student government
+          (ASOSU) to hopefully facilitate a discussion on how to improve
+          students’ experience using Beaverhub. While this team has been
+          disbanded, I have been considering building off this project for my
+          senior project, where I will have an entire school year for
+          development. 
         </p>
       </section>
     </>

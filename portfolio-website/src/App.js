@@ -3,10 +3,8 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import NavBar from "./components/Navbar";
 
 import HomePage from "./pages/HomePage";
-import ResearchPage from "./pages/ResearchPage";
-import ProjectsPage from "./pages/ProjectsPage";
 import BeaverHubPage from "./pages/projects/BeaverHubPage";
-import MyMailPage from "./pages/projects/MyMailPage";
+import FinanceAppPage from "./pages/projects/FinanceAppPage";
 import LetsGetCookingPage from "./pages/projects/LetsGetCookingPage";
 
 import "./App.css";
@@ -22,17 +20,15 @@ function App() {
           <div className="content-area">
             <Routes>
               <Route path="/" element={<HomePage />}></Route>
-              <Route path="research" element={<ResearchPage />}></Route>
-              <Route path="/projects" element={<ProjectsPage />}></Route>
               <Route
-                path="/projects/beaverhub"
+                path="/beaverhub"
                 element={<BeaverHubPage />}
               ></Route>
               <Route
-                path="/projects/letsGetCooking"
+                path="/letsGetCooking"
                 element={<LetsGetCookingPage />}
               ></Route>
-              <Route path="/projects/myMail" element={<MyMailPage />}></Route>
+              <Route path="/financeApp" element={<FinanceAppPage />}></Route>
             </Routes>
           </div>
         </main>

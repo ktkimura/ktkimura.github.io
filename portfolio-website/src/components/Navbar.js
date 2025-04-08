@@ -10,12 +10,6 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="nav-right">
-        <Link to="/projects" className="nav-item">
-          Projects
-        </Link>
-        <Link to="/research" className="nav-item">
-          Research
-        </Link>
         <a
           href="/Katie-Kimura-Resume.pdf"
           target="_blank"

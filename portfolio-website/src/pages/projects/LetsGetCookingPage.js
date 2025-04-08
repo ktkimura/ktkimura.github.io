@@ -1,5 +1,5 @@
 const LetsGetCookingPage = () => {
-  return <h2>Let's Get Cooking!</h2>;
+  return <h1>Let's Get Cooking!</h1>;
 };
 
 export default LetsGetCookingPage;
