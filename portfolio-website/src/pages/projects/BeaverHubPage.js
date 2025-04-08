@@ -6,7 +6,7 @@ const BeaverHubPage = () => {
       <section>
         <h1>Beaverhub Redesign</h1>
         <p>
-          PSY 446 Term Project &nbsp;&nbsp;●&nbsp;&nbsp; October - December 2024
+          PSY 446 Term Project &nbsp;&nbsp;●&nbsp;&nbsp; October-December 2024
         </p>
       </section>
       <section>
@@ -16,6 +16,7 @@ const BeaverHubPage = () => {
             alt="Current Beaverhub Home Page UI"
             className="overviewImage"
           ></img>
+
           <img
             src={require("../../images/beaverhub/bh-new-home.png")}
             alt="Redesigned Beaverhub Home Page UI"
@@ -69,7 +70,7 @@ const BeaverHubPage = () => {
                 schedule) by <mark class="stat">61%</mark>
               </li>
               <li>
-                Reduced cognitive load by <mark class="stat">87.5%</mark> when
+                Reduced users' cognitive load by <mark class="stat">87.5%</mark> when
                 reading schedule information
               </li>
             </ul>

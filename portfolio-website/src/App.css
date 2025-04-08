@@ -36,6 +36,7 @@ hr {
 .content-area h3,
 .content-area h4 {
   font-family: "Merriweather", serif;
+  color: var(--darkPurple);
 }
 
 .content-area h1 {
@@ -105,7 +106,6 @@ footer {
 .projectImages {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   align-items: flex-start;
   justify-content: space-between;
   margin: 2em 0em;
@@ -181,8 +181,8 @@ mark.stat {
   max-width: 10%;
 }
 
-.profileImage{
-  aspect-ratio: 1 / 1 ;
+.profileImage {
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: 50% 10%;
   max-width: 30%;
@@ -191,13 +191,13 @@ mark.stat {
 .homeProfile {
   display: flex;
   flex-flow: row wrap;
-  align-items: flex-start;
+  align-items: center;
   column-gap: 2em;
   margin: 3em 0em;
 }
 
 .homeIntro {
-  max-width: 60%;
+  max-width: 65%;
   display: flex;
   flex-flow: column;
 }
@@ -220,7 +220,7 @@ mark.stat {
   color: #61dafb;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .content-area {
     max-width: 100%;
   }
@@ -234,7 +234,7 @@ mark.stat {
     flex-flow: column wrap;
     align-items: center;
   }
-  
+
   .homeIntro {
     max-width: 100%;
     display: flex;
@@ -246,7 +246,7 @@ mark.stat {
     flex-flow: row wrap;
     justify-content: space-between;
   }
-  
+
   .columnDiv {
     max-width: 100%;
   }
@@ -264,5 +264,8 @@ mark.stat {
   }
   .projectTitle {
     max-width: 28em;
+  }
+  .columnDiv {
+    max-width: 40%;
   }
 }
