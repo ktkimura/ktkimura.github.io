@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.3caedc88.css",
-    "main.js": "/static/js/main.083949ec.js",
+    "main.css": "/static/css/main.28161c95.css",
+    "main.js": "/static/js/main.32a7f1a1.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
+    "static/media/katieKimuraHeadshot2025.jpg": "/static/media/katieKimuraHeadshot2025.47abc6ba922abb868b46.jpg",
+    "static/media/bh-new-home.png": "/static/media/bh-new-home.3bbe09fca1225651bf49.png",
+    "static/media/finance-thumbnail.png": "/static/media/finance-thumbnail.0ced4d180d2d54d8dc64.png",
+    "static/media/bh-old-home.png": "/static/media/bh-old-home.b19f47eff98260237c7e.png",
+    "static/media/cooking-home.png": "/static/media/cooking-home.e154e0523b2c91d18efd.png",
+    "static/media/susan.png": "/static/media/susan.bb012874bbaffcbe4b60.png",
     "index.html": "/index.html",
-    "main.3caedc88.css.map": "/static/css/main.3caedc88.css.map",
-    "main.083949ec.js.map": "/static/js/main.083949ec.js.map",
+    "main.28161c95.css.map": "/static/css/main.28161c95.css.map",
+    "main.32a7f1a1.js.map": "/static/js/main.32a7f1a1.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3caedc88.css",
-    "static/js/main.083949ec.js"
+    "static/css/main.28161c95.css",
+    "static/js/main.32a7f1a1.js"
   ]
 }
