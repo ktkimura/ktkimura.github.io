@@ -70,8 +70,8 @@ const BeaverHubPage = () => {
                 schedule) by <mark class="stat">61%</mark>
               </li>
               <li>
-                Reduced users' cognitive load by <mark class="stat">87.5%</mark> when
-                reading schedule information
+                Reduced users' cognitive load by <mark class="stat">87.5%</mark>{" "}
+                when reading schedule information
               </li>
             </ul>
           </div>
@@ -82,6 +82,18 @@ const BeaverHubPage = () => {
         <h2>The Process</h2>
         <div>
           <h3>Research</h3>
+          <div>
+            <iframe
+              src="https://docs.google.com/presentation/d/e/2PACX-1vQCZS7QgzTNb765gq7BOfFlxcV4BiWBrPm2C3M9QCF4-Tnl9H78HA6M7HD4TkYNg97bNide88QeCewV/embed?start=false&loop=false"
+              title="Static Interactive Beaverhub"
+              frameborder="0"
+              width="960"
+              height="569"
+              allowfullscreen="true"
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+            ></iframe>
+          </div>
           <p>
             The first step we took towards redesigning Beaverhub was evaluating
             its current interface and user experience by developing user
