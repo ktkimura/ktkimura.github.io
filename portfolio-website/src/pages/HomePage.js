@@ -5,11 +5,13 @@ const HomePage = () => {
   return (
     <>
       <section id="intro" className="homeProfile">
-        <img
-          src={require("../images/katieKimuraHeadshot2025.jpg")}
-          alt="My headshot"
-          className="profileImage"
-        ></img>
+        <div className="profileImage">
+          <img
+            src={require("../images/katieKimuraHeadshot2025.jpg")}
+            alt="My headshot"
+          ></img>
+        </div>
+
         <div className="homeIntro">
           <h1>Hi, I'm Katie!</h1>
           <p>

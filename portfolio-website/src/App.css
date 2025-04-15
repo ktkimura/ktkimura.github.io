@@ -17,18 +17,18 @@ body {
 
 hr {
   color: var(--darkestPurple);
-  margin: 1em 0em;
+  margin: 1rem 0rem;
 }
 
 .content-area {
-  padding: 1.5em 2.5em;
+  padding: 1.5rem 2.5rem;
   max-width: 70%;
-  margin: 0em auto;
+  margin: 0rem auto;
 }
 
 .content-area * {
   font-family: "Merriweather Sans", sans-serif;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 .content-area h1,
@@ -46,8 +46,8 @@ hr {
 nav {
   background-color: var(--darkPurple);
   font-family: "Merriweather", serif;
-  margin: 0em auto;
-  padding: 0 1em;
+  margin: 0rem auto;
+  padding: 0 1rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -61,7 +61,7 @@ nav {
 }
 
 .nav-item {
-  padding-left: 1em;
+  padding-left: 1rem;
   text-decoration: none;
   color: white;
 }
@@ -76,23 +76,23 @@ footer {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  margin-top: 2.5em;
+  margin-top: 2.5rem;
 }
 
 .socials {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  column-gap: 0.75em;
+  column-gap: 0.75rem;
 }
 
 .button {
   display: inline-block;
   width: fit-content;
-  padding: 0.5em;
+  padding: 0.5rem;
   background-color: var(--darkPurple);
-  border: solid var(--darkPurple) 0.1em;
-  border-radius: 0.725em;
+  border: solid var(--darkPurple) 0.1rem;
+  border-radius: 0.725rem;
   color: white;
   text-decoration: none;
 }
@@ -108,44 +108,102 @@ footer {
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 2em 0em;
+  margin: 2rem 0rem;
 }
 
-.overviewImage {
+.projectImages img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   max-width: 48%;
 }
 
-.threeColumnDiv {
+.multiColumnDiv {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 
-.columnDiv {
+.multiColumnDiv div {
   max-width: 35%;
 }
 
-mark.stat {
+.multiColumnDiv img {
+  width: auto;
+  max-height: 25rem;      
+  object-fit: cover;      
+  display: block;
+}
+
+mark {
   background: var(--lightPurple);
+}
+
+mark.stat {
   font-weight: bold;
+}
+
+.goalDiv {
+  background-color: var(--darkPurple);  ;
+  align-self: center;
+  margin: 1rem 0rem;
+  padding: 0.05rem 2rem;
+  border-radius: 0.75rem;
+}
+
+.goalDiv p {
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
+.quotesDiv {
+  margin-left: 2rem;
+}
+
+.quotesDiv p {
+  font-size: large;
+  color: var(--darkestPurple)
+}
+
+
+.projectDivFrame {
+  margin: 0 auto;
+  height: 30rem;
+}
+
+.projectDivFrame iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.projectDivImg {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 0rem;
+}
+
+.projectDivImg img {
+  object-fit: contain;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .projectLinksDiv {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 1rem;
   justify-content: space-between;
-  padding: 0.5em 0;
+  padding: 0.5rem 0;
 }
 
 .projectTitle {
-  padding: 0.5em;
+  padding: 0.5rem;
   text-decoration: none;
   color: black;
-  max-width: 18.75em;
-  flex: 1 1 17.5em;
+  max-width: 18.75rem;
+  flex: 1 1 17.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,40 +218,64 @@ mark.stat {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border: solid 0.0625em var(--darkPurple);
-  border-radius: 0.25em;
+  border: solid 0.0625rem var(--darkPurple);
+  border-radius: 0.5rem;
 }
 
 .projectTitle p {
-  margin-top: 0.3125em;
+  margin-top: 0.3125rem;
   font-weight: bold;
   text-align: center;
 }
 
-.userPersona {
+.personasDiv {
   display: flex;
   flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+  column-gap: 10rem;
+}
+
+.userPersona {
+  display: flex;
+  width: fit-content;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
 .personaImage {
-  max-width: 10%;
+  width: 7rem;
+  height: auto;
 }
 
+.personaDesc {
+  margin-top: -1rem;
+}
+
+.personaDesc p {
+  font-size: large ;
+  margin-left: 1.5rem;
+}
+
+.personaDesc ul {
+  margin-top: -0.75rem;
+}
+
+
 .profileImage {
+  display: flex;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: 50% 10%;
   max-width: 30%;
+  overflow: hidden;
+  border-radius: 2rem;
 }
 
 .homeProfile {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  column-gap: 2em;
-  margin: 3em 0em;
+  column-gap: 2rem;
+  margin: 3rem 0rem;
 }
 
 .homeIntro {
@@ -203,21 +285,8 @@ mark.stat {
 }
 
 .homeIntro p {
-  margin-top: -0.5em;
+  margin-top: -0.5rem;
   font-size: x-large;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @media (max-width: 600px) {
@@ -227,7 +296,7 @@ mark.stat {
 
   .profileImage {
     max-width: 100%;
-    height: 20em;
+    height: 20rem;
   }
 
   .homeProfile {
@@ -242,7 +311,17 @@ mark.stat {
     flex-flow: column;
   }
 
-  .threeColumnDiv {
+  .projectImages {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 1rem;
+  }
+
+  .projectImages img {
+    max-width: 100%;
+  }
+
+  .multiColumnDiv {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -251,11 +330,24 @@ mark.stat {
   .columnDiv {
     max-width: 100%;
   }
+
+  .projectDivImg {
+    height: 15rem;
+  }
+
+  .projectDivImg img {
+    max-height: 30rem;
+  }
+
+  .multiColumnDiv img {
+    width: 100%;           
+    max-height: 250px;
+  }
 }
 
 @media (min-width: 1000px) {
   .projectTitle {
-    max-width: 22.5em;
+    max-width: 22.5rem;
   }
 }
 
@@ -264,7 +356,7 @@ mark.stat {
     max-width: 60%;
   }
   .projectTitle {
-    max-width: 28em;
+    max-width: 28rem;
   }
   .columnDiv {
     max-width: 40%;
