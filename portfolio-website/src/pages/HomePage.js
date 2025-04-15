@@ -53,22 +53,22 @@ const HomePage = () => {
             <p>Beaverhub Redesign</p>
           </Link>
 
-          <Link to="/financeApp" className="projectTitle">
+          <Link to="" className="projectTitle">
             <img
               src={require("../images/financeApp/finance-thumbnail.png")}
               alt="Finance Overview Mobile App"
               className="projectPageImage"
             />
-            <p>Finance Overview Mobile App</p>
+            <p>Finance Overview Mobile App [UNDER CONSTRUCTION]</p>
           </Link>
 
-          <Link to="/letsGetCooking" className="projectTitle">
+          <Link to="" className="projectTitle">
             <img
               src={require("../images/letsGetCooking/cooking-home.png")}
               alt="Let's Get Cooking Project"
               className="projectPageImage"
             />
-            <p>Let's Get Cooking!</p>
+            <p>Let's Get Cooking! [UNDER CONSTRUCTION]</p>
           </Link>
         </div>
       </section>

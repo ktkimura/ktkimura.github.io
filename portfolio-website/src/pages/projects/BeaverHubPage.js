@@ -6,7 +6,7 @@ const BeaverHubPage = () => {
       <section>
         <h1>Beaverhub Redesign</h1>
         <p>
-          Psychology of HCI (PSY 446) Term Project &nbsp;&nbsp;●&nbsp;&nbsp;
+          Psychology of HCI Term Project &nbsp;&nbsp;●&nbsp;&nbsp;
           October-December 2024
         </p>
       </section>
@@ -46,9 +46,9 @@ const BeaverHubPage = () => {
             <h3>Team</h3>
             <ul>
               <li>Katie Kimura</li>
-              <li>Daniel Thien</li>
               <li>Ellie Herber</li>
               <li>Sydney Stupp</li>
+              <li>Daniel Thien</li>
             </ul>
           </div>
           <div>
@@ -534,7 +534,7 @@ const BeaverHubPage = () => {
       </section>
       <hr></hr>
       <section>
-        <h3>Final Thoughts</h3>
+        <h2>Final Thoughts</h2>
         <p>
           If this project were to have continued, we would have aimed to present
           a more refined and functional product to OSU’s student government
