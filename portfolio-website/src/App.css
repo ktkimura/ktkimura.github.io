@@ -21,8 +21,7 @@ hr {
 }
 
 .content-area {
-  padding: 1.5rem 2.5rem;
-  max-width: 70%;
+  max-width: 80%;
   margin: 0rem auto;
 }
 
@@ -177,17 +176,16 @@ mark.stat {
 }
 
 .projectDivImg {
-  display: flex;
-  align-items: flex-start;
   margin: 1rem 0rem;
+  overflow: hidden;
 }
 
 .projectDivImg img {
   object-fit: contain;
-  width: 100%;
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
   display: block;
+  flex-grow: 1;
 }
 
 .projectLinksDiv {
@@ -289,9 +287,9 @@ mark.stat {
   font-size: x-large;
 }
 
-@media (max-width: 600px) {
+@media (max-width:799px) {
   .content-area {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .profileImage {
@@ -323,20 +321,11 @@ mark.stat {
 
   .multiColumnDiv {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
   }
 
-  .columnDiv {
+  .multiColumnDiv div {
     max-width: 100%;
-  }
-
-  .projectDivImg {
-    height: 15rem;
-  }
-
-  .projectDivImg img {
-    max-height: 30rem;
   }
 
   .multiColumnDiv img {
@@ -345,11 +334,6 @@ mark.stat {
   }
 }
 
-@media (min-width: 1000px) {
-  .projectTitle {
-    max-width: 22.5rem;
-  }
-}
 
 @media (min-width: 1500px) {
   .content-area {

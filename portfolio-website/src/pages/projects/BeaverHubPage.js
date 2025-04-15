@@ -233,7 +233,7 @@ const BeaverHubPage = () => {
                   since he always uses it when creating his schedule every term.
                 </li>
               </ul>
-              <div>
+              <div className="projectDivImg">
                 <img
                   src={require("../../images/beaverhub/timeblock-schedule.png")}
                   alt="Screenshot of a timeblock schedule."
@@ -356,7 +356,7 @@ const BeaverHubPage = () => {
             <div className="projectDivImg">
               <img
                 src={require("../../images/beaverhub/final-sketch-1.jpg")}
-                alt=""
+                alt="Colored sketch of Edit Mode with red minus icons on the top left corner of every module and a 6-dot icon positioned at the top edge of each module. The toolbar is collapsed."
               ></img>
             </div>
             <p>
@@ -366,7 +366,7 @@ const BeaverHubPage = () => {
             <div className="projectDivImg">
               <img
                 src={require("../../images/beaverhub/final-sketch-2.jpg")}
-                alt=""
+                alt="Colored sketch of Edit Mode with red minus icons on the top left corner of every module and a 6-dot icon positioned at the top edge of each module. The toolbar is expanded to show features to toggle the modules being displayed and adjust other color customization settings."
               ></img>
             </div>
             <p>
@@ -482,17 +482,58 @@ const BeaverHubPage = () => {
                 Improved customization of interface by{" "}
                 <mark class="stat">105%</mark>
               </li>
+              <div className="projectDivImg">
+                <img
+                  src={require("../../images/beaverhub/plot_interfaceCustomizability.png")}
+                  alt="100% stacked bar chart comparing participants' rating of interface customizability for Beaverhub versus our design. Beaverhub's bar is a mix of light greens while our design's bar is made up of two dark greens, signifying higher ratings of customizability."
+                ></img>
+              </div>
+              <p>
+                <strong>Figure 11.</strong> Participants' ratings of perceived
+                interface customizability.
+              </p>
               <li>
                 Reduced time to find GPA by <mark class="stat">61%</mark>
               </li>
+              <div className="projectDivImg">
+                <img
+                  src={require("../../images/beaverhub/plot_findGPA.png")}
+                  alt="Box plot chart comparing particpants' time to find GPA on Beaverhub versus our design. Beaverhub has an average of 5.89 seconds. Our design has an average of 2.27 seconds."
+                ></img>
+              </div>
+              <p>
+                <strong>Figure 12.</strong> Comparison of time taken (seconds)
+                by participants to find their GPA on each interface.
+              </p>
               <li>
-                Reduced time to find current balance by{" "}
+                Reduced time to find current balance due by{" "}
                 <mark class="stat">62%</mark>
               </li>
+              <div className="projectDivImg">
+                <img
+                  src={require("../../images/beaverhub/plot_findCurrentBalance.png")}
+                  alt="Box plot chart comparing particpants' time to find their current balance due on Beaverhub versus our design. Beaverhub has an average of  sec6.65onds. Our design has an average of 2.48 seconds."
+                ></img>
+              </div>
+              <p>
+                <strong>Figure 13.</strong> Comparison of time taken (seconds)
+                by participants to find their current financial balance due.
+              </p>
               <li>
-                Reduced time to find names and times of classes for one day by
+                Reduced time to find names and times of classes for one day by{" "}
                 <mark class="stat">60%</mark>
               </li>
+              <div className="projectDivImg">
+                <img
+                  src={require("../../images/beaverhub/plot_findMondayClasses.png")}
+                  alt="Box plot chart comparing particpants' time to find their Monday class schedule on Beaverhub versus our design. Beaverhub has an average of 9.99 seconds. Our design has an average of 3.92 seconds."
+                ></img>
+              </div>
+              <p>
+                <strong>Figure 14.</strong> Comparison of time taken (seconds)
+                by participants to find their Monday class schedule on each
+                interface.
+              </p>
               <li>
                 Reduced users’ cognitive load by <mark class="stat">87.5%</mark>{" "}
                 when reading schedule information
