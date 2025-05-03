@@ -13,12 +13,12 @@ const FinanceAppPage = () => {
       <section>
         <div className="projectImages">
           <img
-            src={require("../../images/financeApp/finance-overview-addEntry.png")}
+            src="/images/financeApp/finance-overview-addEntry.png"
             alt="Current Beaverhub Home Page UI"
           ></img>
 
           <img
-            src={require("../../images/financeApp/finance-wireflow-1.jpg")}
+            src="/images/financeApp/finance-wireflow-1.jpg"
             alt="Redesigned Beaverhub Home Page UI"
             className="verticalImage"
           ></img>
@@ -82,10 +82,10 @@ const FinanceAppPage = () => {
           currently using and how they use these apps to manage their finances.
         </p>
         <p>
-          I conducted two semi-structured interviews with two individuals, A and
-          K.
+          I conducted two semi-structured interviews with two individuals, P1 and
+          P2.
         </p>
-        <h4>Interview 1 w/ A</h4>
+        <h4>Interview 1 w/ P1</h4>
         <ul>
           <li>Uses Notion and Bank of America (BofA) mobile app</li>
           <li>Periodically checks bank account and credit card purchases</li>
@@ -99,7 +99,7 @@ const FinanceAppPage = () => {
           </li>
           <li>Expressed interest in a pie chart visualization</li>
         </ul>
-        <h4>Interview 2 w/ K</h4>
+        <h4>Interview 2 w/ P2</h4>
         <ul>
           <li>Uses HawaiiUSA FCU mobile app</li>
           <li>
@@ -130,7 +130,7 @@ const FinanceAppPage = () => {
         </p>
         <div className="projectDivImg">
           <img
-            src={require("../../images/financeApp/finance-wireflow-1.jpg")}
+            src="/images/financeApp/finance-wireflow-1.jpg"
             alt="A rough sketch of ideas including an Edit Mode feature, collapsible tool bar, and movable modules."
           ></img>
         </div>
@@ -140,7 +140,7 @@ const FinanceAppPage = () => {
         </p>
         <div className="projectDivImg">
           <img
-            src={require("../../images/financeApp/finance-wireflow-2.jpg")}
+            src="/images/financeApp/finance-wireflow-2.jpg"
             alt="A rough sketch of ideas including an Edit Mode feature, collapsible tool bar, and movable modules."
           ></img>
         </div>
@@ -173,7 +173,7 @@ const FinanceAppPage = () => {
         </div>
         <h3>Evaluation of Initial Prototype</h3>
         <p>
-          To evaluate my prototype, I reached out to A again to have them
+          To evaluate my prototype, I reached out to P1 again to have them
           participate in a think-aloud usability study. The main findings are as
           follows:
         </p>
@@ -187,23 +187,36 @@ const FinanceAppPage = () => {
             final prototype and perhaps some filtering and sorting functions as
             well
           </li>
-          <li>
-            Using the terminology of “inflow” and “outflow” might not be the
-            most user-friendly or initially recognizable
-          </li>
         </ul>
         <p>
-          I also had A fill out the system usability scale, resulting in a score
+          I also had P1 fill out the system usability scale, resulting in a score
           of 95. This score is above 70, indicating that the system's usability
-          can be deemed acceptable as per Albert and Tullis (126-127)
+          can be deemed "acceptable" as per Albert and Tullis (126-127)
           <sup>
             <a href="#ref1">1</a>
           </sup>
           .
         </p>
         <p id="ref1">
-          <sup>1</sup> Bill Albert & Tom Tullis, "Measuring the User Experience," 2022.        </p>
+          <sup>1</sup> Bill Albert & Tom Tullis, "Measuring the User
+          Experience," 2022.{" "}
+        </p>
         <h3>Finalized Prototype</h3>
+        <p>
+          After evaluating everyone's individual prototypes, the team decided to
+          use mine as a base as I had maintained the best organizational
+          structure. To maintain design consistency, I also designed and
+          prototyped a template component for a help icon and modal that each
+          team member used for their assigned work.
+        </p>
+        <p>
+          I chose to work on updating the "Add Income/Expense" feature as I was
+          most familiar with the layout and it was one of the more complex
+          features to design. My two goals were to make the feature more
+          interactive through input fields and implement the bulk addition
+          sub-feature. My finished work can be seen in the Figma prototype embed
+          below after clicking on the "+" icon to go to the "Add Entry" page.
+        </p>
         <div className="projectDivFrame">
           <iframe
             title="Finance App Final Figma Prototype"

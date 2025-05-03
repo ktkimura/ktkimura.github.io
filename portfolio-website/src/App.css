@@ -188,6 +188,11 @@ mark.stat {
   flex-grow: 1;
 }
 
+.reactPlayer {
+  object-fit: contain;
+  max-width: 50rem;
+}
+
 .projectLinksDiv {
   display: flex;
   flex-wrap: wrap;

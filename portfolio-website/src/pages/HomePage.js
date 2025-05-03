@@ -7,7 +7,7 @@ const HomePage = () => {
       <section id="intro" className="homeProfile">
         <div className="profileImage">
           <img
-            src={require("../images/katieKimuraHeadshot2025.jpg")}
+            src="/images/katieKimuraHeadshot2025.jpg"
             alt="My headshot"
           ></img>
         </div>
@@ -46,7 +46,7 @@ const HomePage = () => {
         <div className="projectLinksDiv">
           <Link to="/beaverhub" className="projectTitle">
             <img
-              src={require("../images/beaverhub/bh-new-home.png")}
+              src="/images/beaverhub/bh-new-home.png"
               alt="Beaverhub Redesign Project"
               className="projectPageImage"
             />
@@ -61,7 +61,7 @@ const HomePage = () => {
 
           <Link to="financeApp" className="projectTitle">
             <img
-              src={require("../images/financeApp/finance-thumbnail.png")}
+              src="/images/financeApp/finance-thumbnail.png"
               alt="Finance Overview Mobile App"
               className="projectPageImage"
             />
@@ -74,17 +74,17 @@ const HomePage = () => {
             </div>
           </Link>
 
-          <Link to="" className="projectTitle">
+          <Link to="letsGetCooking" className="projectTitle">
             <img
-              src={require("../images/letsGetCooking/cooking-home.png")}
+              src="/images/letsGetCooking/cooking-home.png"
               alt="Let's Get Cooking Project"
               className="projectPageImage"
             />
-            <p>Let's Get Cooking! [UNDER CONSTRUCTION]</p>
+            <p>Let's Get Cooking!</p>
             <div className="projectTags">
               <span className="tag">Software Development</span>
-              <span className="tag">React.js</span>
-              <span className="tag">Wireflows</span>
+              <span className="tag">Web App</span>
+              <span className="tag">Microservices</span>
             </div>
           </Link>
         </div>

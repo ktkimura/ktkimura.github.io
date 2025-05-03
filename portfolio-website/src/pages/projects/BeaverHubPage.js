@@ -13,12 +13,12 @@ const BeaverHubPage = () => {
       <section>
         <div className="projectImages">
           <img
-            src={require("../../images/beaverhub/bh-old-home.png")}
+            src="/images/beaverhub/bh-old-home.png"
             alt="Current Beaverhub Home Page UI"
           ></img>
 
           <img
-            src={require("../../images/beaverhub/bh-new-home.png")}
+            src="/images/beaverhub/bh-new-home.png"
             alt="Redesigned Beaverhub Home Page UI"
           ></img>
         </div>
@@ -116,7 +116,7 @@ const BeaverHubPage = () => {
           <div className="personasDiv">
             <div className="userPersona">
               <img
-                src={require("../../images/beaverhub/susan.png")}
+                src="/images/beaverhub/susan.png"
                 alt="Icon of a woman"
                 className="personaImage"
               ></img>
@@ -134,7 +134,7 @@ const BeaverHubPage = () => {
             </div>
             <div className="userPersona">
               <img
-                src={require("../../images/beaverhub/bobby.png")}
+                src="/images/beaverhub/bobby.png"
                 alt="Icon of a man"
                 className="personaImage"
               ></img>
@@ -176,7 +176,7 @@ const BeaverHubPage = () => {
               </ul>
               <div className="projectDivImg">
                 <img
-                  src={require("../../images/beaverhub/bh-schedule-highlight.png")}
+                  src="/images/beaverhub/bh-schedule-highlight.png"
                   alt="Screenshot of current Beaverhub interface with schedule module highlighted in a yellow overlay."
                 ></img>
               </div>
@@ -207,7 +207,7 @@ const BeaverHubPage = () => {
               </ul>
               <div className="projectDivImg">
                 <img
-                  src={require("../../images/beaverhub/bh-academic-finance-switch.gif")}
+                  src="/images/beaverhub/bh-academic-finance-switch.gif"
                   alt="GIF of user navigating between the Academics and Finances pages."
                 ></img>
               </div>
@@ -237,7 +237,7 @@ const BeaverHubPage = () => {
               </ul>
               <div className="projectDivImg">
                 <img
-                  src={require("../../images/beaverhub/timeblock-schedule.png")}
+                  src="/images/beaverhub/timeblock-schedule.png"
                   alt="Screenshot of a timeblock schedule."
                 ></img>
               </div>
@@ -296,7 +296,7 @@ const BeaverHubPage = () => {
             </p>
             <div className="projectDivImg">
               <img
-                src={require("../../images/beaverhub/sketch-1.jpg")}
+                src="/images/beaverhub/sketch-1.jpg"
                 alt="A rough sketch of ideas including an Edit Mode feature, collapsible tool bar, and movable modules."
               ></img>
             </div>
@@ -320,11 +320,11 @@ const BeaverHubPage = () => {
             </p>
             <div className="multiColumnDiv">
               <img
-                src={require("../../images/beaverhub/iphone-home-edit.gif")}
+                src="/images/beaverhub/iphone-home-edit.gif"
                 alt="GIF of iPhone homescreen app rearrangement feature."
               ></img>
               <img
-                src={require("../../images/beaverhub/canvas-move-card.gif")}
+                src="/images/beaverhub/canvas-move-card.gif"
                 alt="GIF of Canvas dashboard course card rearrangement feature."
               ></img>
             </div>
@@ -357,7 +357,7 @@ const BeaverHubPage = () => {
             </p>
             <div className="projectDivImg">
               <img
-                src={require("../../images/beaverhub/final-sketch-1.jpg")}
+                src="/images/beaverhub/final-sketch-1.jpg"
                 alt="Colored sketch of Edit Mode with red minus icons on the top left corner of every module and a 6-dot icon positioned at the top edge of each module. The toolbar is collapsed."
               ></img>
             </div>
@@ -367,7 +367,7 @@ const BeaverHubPage = () => {
             </p>
             <div className="projectDivImg">
               <img
-                src={require("../../images/beaverhub/final-sketch-2.jpg")}
+                src="/images/beaverhub/final-sketch-2.jpg"
                 alt="Colored sketch of Edit Mode with red minus icons on the top left corner of every module and a 6-dot icon positioned at the top edge of each module. The toolbar is expanded to show features to toggle the modules being displayed and adjust other color customization settings."
               ></img>
             </div>
@@ -489,7 +489,7 @@ const BeaverHubPage = () => {
               </li>
               <div className="projectDivImg">
                 <img
-                  src={require("../../images/beaverhub/plot_interfaceCustomizability.png")}
+                  src="/images/beaverhub/plot_interfaceCustomizability.png"
                   alt="100% stacked bar chart comparing participants' rating of interface customizability for Beaverhub versus our design. Beaverhub's bar is a mix of light greens while our design's bar is made up of two dark greens, signifying higher ratings of customizability."
                 ></img>
               </div>
@@ -502,7 +502,7 @@ const BeaverHubPage = () => {
               </li>
               <div className="projectDivImg">
                 <img
-                  src={require("../../images/beaverhub/plot_findGPA.png")}
+                  src="/images/beaverhub/plot_findGPA.png"
                   alt="Box plot chart comparing particpants' time to find GPA on Beaverhub versus our design. Beaverhub has an average of 5.89 seconds. Our design has an average of 2.27 seconds."
                 ></img>
               </div>
@@ -516,7 +516,7 @@ const BeaverHubPage = () => {
               </li>
               <div className="projectDivImg">
                 <img
-                  src={require("../../images/beaverhub/plot_findCurrentBalance.png")}
+                  src="/images/beaverhub/plot_findCurrentBalance.png"
                   alt="Box plot chart comparing particpants' time to find their current balance due on Beaverhub versus our design. Beaverhub has an average of  sec6.65onds. Our design has an average of 2.48 seconds."
                 ></img>
               </div>
@@ -530,7 +530,7 @@ const BeaverHubPage = () => {
               </li>
               <div className="projectDivImg">
                 <img
-                  src={require("../../images/beaverhub/plot_findMondayClasses.png")}
+                  src="/images/beaverhub/plot_findMondayClasses.png"
                   alt="Box plot chart comparing particpants' time to find their Monday class schedule on Beaverhub versus our design. Beaverhub has an average of 9.99 seconds. Our design has an average of 3.92 seconds."
                 ></img>
               </div>
