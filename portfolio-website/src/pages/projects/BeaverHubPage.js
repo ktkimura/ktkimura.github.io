@@ -15,13 +15,11 @@ const BeaverHubPage = () => {
           <img
             src={require("../../images/beaverhub/bh-old-home.png")}
             alt="Current Beaverhub Home Page UI"
-            className="overviewImage"
           ></img>
 
           <img
             src={require("../../images/beaverhub/bh-new-home.png")}
             alt="Redesigned Beaverhub Home Page UI"
-            className="overviewImage"
           ></img>
         </div>
       </section>
@@ -105,6 +103,10 @@ const BeaverHubPage = () => {
               allowfullscreen="true"
               mozallowfullscreen="true"
               webkitallowfullscreen="true"
+              style={{
+                border: "1px solid rgba(0, 0, 0, 0.1)",
+                height: "30rem",
+              }}
             ></iframe>
           </div>
           <p>
@@ -413,8 +415,11 @@ const BeaverHubPage = () => {
             </p>
             <div className="projectDivFrame">
               <iframe
-                title="Figma Prototype Embed"
-                style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                title="Beaverhub Redesign Figma Prototype"
+                style={{
+                  border: "1px solid rgba(0, 0, 0, 0.1)",
+                  height: "40rem",
+                }}
                 src="https://embed.figma.com/proto/hpbqhz40CtQvBMhNVitGah/PSY446-Lab-5?node-id=116-918&starting-point-node-id=116%3A918&embed-host=share"
                 allowFullScreen
               ></iframe>

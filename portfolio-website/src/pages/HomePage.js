@@ -53,13 +53,13 @@ const HomePage = () => {
             <p>Beaverhub Redesign</p>
           </Link>
 
-          <Link to="" className="projectTitle">
+          <Link to="financeApp" className="projectTitle">
             <img
               src={require("../images/financeApp/finance-thumbnail.png")}
               alt="Finance Overview Mobile App"
               className="projectPageImage"
             />
-            <p>Finance Overview Mobile App [UNDER CONSTRUCTION]</p>
+            <p>Finance Overview Mobile App</p>
           </Link>
 
           <Link to="" className="projectTitle">
