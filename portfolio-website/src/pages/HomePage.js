@@ -15,8 +15,8 @@ const HomePage = () => {
         <div className="homeIntro">
           <h1>Hi, I'm Katie!</h1>
           <p>
-            I design and develop accessible, user-friendly software that meets
-            diverse needs and ensures an enjoyable experience.
+            I bridge the gap between software development and design to advocate for better user
+            experiences
           </p>
           <div className="socials">
             <a
