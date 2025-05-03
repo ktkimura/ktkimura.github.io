@@ -52,7 +52,7 @@ const HomePage = () => {
             />
             <p>Beaverhub Redesign</p>
             <div className="projectTags">
-              <span className="tag">Interface Redesign</span>
+              <span className="tag">Web Interface Redesign</span>
               <span className="tag">User Research</span>
               <span className="tag">Figma</span>
               <span className="tag">User Personas</span>
@@ -67,7 +67,7 @@ const HomePage = () => {
             />
             <p>Finance Overview Mobile App</p>
             <div className="projectTags">
-              <span className="tag">Original Design</span>
+              <span className="tag">Mobile App Design</span>
               <span className="tag">User Research</span>
               <span className="tag">Figma</span>
               <span className="tag">Wireflows</span>
@@ -82,16 +82,14 @@ const HomePage = () => {
             />
             <p>Let's Get Cooking!</p>
             <div className="projectTags">
-              <span className="tag">Software Development</span>
               <span className="tag">Web App</span>
+              <span className="tag">Agile Development</span>
               <span className="tag">Microservices</span>
+              <span className="tag">React.js</span>
             </div>
           </Link>
         </div>
       </section>
-      {/* <section id="research">
-        <h1>Research</h1>
-      </section> */}
     </>
   );
 };

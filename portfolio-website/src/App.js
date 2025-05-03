@@ -20,10 +20,7 @@ function App() {
           <div className="content-area">
             <Routes>
               <Route path="/" element={<HomePage />}></Route>
-              <Route
-                path="/beaverhub"
-                element={<BeaverHubPage />}
-              ></Route>
+              <Route path="/beaverhub" element={<BeaverHubPage />}></Route>
               <Route
                 path="/letsGetCooking"
                 element={<LetsGetCookingPage />}
@@ -33,6 +30,14 @@ function App() {
           </div>
         </main>
         <footer>
+          <a
+            href="https://github.com/ktkimura/ktkimura.github.io"
+            className="button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Website Github Repo
+          </a>
           <p>&copy; 2024 Katie Kimura.</p>
         </footer>
       </BrowserRouter>
