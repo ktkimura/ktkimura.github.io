@@ -15,8 +15,8 @@ const HomePage = () => {
         <div className="homeIntro">
           <h1>Hi, I'm Katie!</h1>
           <p>
-            I bridge the gap between software development and design to advocate for better user
-            experiences
+            I bridge the gap between software development and design to advocate
+            for better user experiences
           </p>
           <div className="socials">
             <a
@@ -42,7 +42,7 @@ const HomePage = () => {
         </div>
       </section>
       <section id="projects">
-        <h1>Projects</h1>
+        <h1 className="homeH1">Projects</h1>
         <div className="projectLinksDiv">
           <Link to="/beaverhub" className="projectTitle">
             <img
@@ -51,6 +51,12 @@ const HomePage = () => {
               className="projectPageImage"
             />
             <p>Beaverhub Redesign</p>
+            <div className="projectTags">
+              <span className="tag">Interface Redesign</span>
+              <span className="tag">User Research</span>
+              <span className="tag">Figma</span>
+              <span className="tag">User Personas</span>
+            </div>
           </Link>
 
           <Link to="financeApp" className="projectTitle">
@@ -60,6 +66,12 @@ const HomePage = () => {
               className="projectPageImage"
             />
             <p>Finance Overview Mobile App</p>
+            <div className="projectTags">
+              <span className="tag">Original Design</span>
+              <span className="tag">User Research</span>
+              <span className="tag">Figma</span>
+              <span className="tag">Wireflows</span>
+            </div>
           </Link>
 
           <Link to="" className="projectTitle">
@@ -69,6 +81,11 @@ const HomePage = () => {
               className="projectPageImage"
             />
             <p>Let's Get Cooking! [UNDER CONSTRUCTION]</p>
+            <div className="projectTags">
+              <span className="tag">Software Development</span>
+              <span className="tag">React.js</span>
+              <span className="tag">Wireflows</span>
+            </div>
           </Link>
         </div>
       </section>
