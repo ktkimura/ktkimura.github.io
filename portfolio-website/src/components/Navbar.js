@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <div className="nav-right">
         <a
-          href="/Katie_Kimura_Resume.pdf"
+          href="/katie_kimura_resume_swe.pdf"
           target="_blank"
           download
           title="Download my resume"
